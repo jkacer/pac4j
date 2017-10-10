@@ -29,4 +29,21 @@ public class SAML2Profile extends CommonProfile {
     public String getSessionIndex() {
         return (String) getAttribute(SAML2Authenticator.SESSION_INDEX);
     }
+
+    public String getSamlNameIdFormat() {
+        return (String) getAttribute(SAML2Authenticator.SAML_NAME_ID_FORMAT);
+    }
+
+    public String getSamlNameIdNameQualifier() {
+        return (String) getAttribute(SAML2Authenticator.SAML_NAME_ID_NAME_QUALIFIER);
+    }
+
+    public String getSamlNameIdSpNameQualifier() {
+        return (String) getAttribute(SAML2Authenticator.SAML_NAME_ID_SP_NAME_QUALIFIER);
+    }
+
+    public String getSamlNameIdSpProviderId() {
+        return (String) getAttribute(SAML2Authenticator.SAML_NAME_ID_SP_PROVIDED_ID);
+    }
+
 }
